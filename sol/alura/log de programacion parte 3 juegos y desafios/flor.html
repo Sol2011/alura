@@ -1,0 +1,56 @@
+<canvas width="600" height="400"></canvas>
+
+<script>
+
+    var pantalla = document.querySelector("canvas");
+    var pincel = pantalla.getContext("2d");
+    pincel.fillStyle = "lightgray";
+    pincel.fillRect(0, 0, 600, 400);
+
+    function dibujarCirculo(x, y, radio, color) {
+
+        pincel.fillStyle = color;
+        pincel.beginPath();
+        pincel.arc(x, y, radio, 0, 2*3.14);
+        pincel.fill();
+    }
+
+    dibujarCirculo(300,200,10,"red");
+    dibujarCirculo(300,180,10,"yellow");
+    dibujarCirculo(300,220,10,"blue");
+    dibujarCirculo(320,200,10,"black");
+    dibujarCirculo(280,200,10,"orange");
+
+
+  /*  pincel.fillStyle= "red";    // para dar color, propiedad o caracteristica
+    pincel.beginPath();  // pincel para iniciar camino
+    pincel.arc(300,200,50,0,2*3.14) // para graficar circunferencias
+    // 1posicion inicial(300,200) 2radio(50),angulos 0,2*3,14
+    pincel.fill(); // fill=llenar
+
+    pincel.fillStyle= "yellow";    // para dar color, propiedad o caracteristica
+    pincel.beginPath();  // pincel para iniciar camino
+    pincel.arc(300,100,50,0,2*3.14) // para graficar circunferencias
+    // 1posicion inicial(300,200) 2radio(50),angulos 0,2*3,14
+    pincel.fill(); // fill=llenar
+
+    pincel.fillStyle= "blue";    // para dar color, propiedad o caracteristica
+    pincel.beginPath();  // pincel para iniciar camino
+    pincel.arc(300,300,50,0,2*3.14) // para graficar circunferencias
+    // 1posicion inicial(300,200) 2radio(50),angulos 0,2*3,14
+    pincel.fill(); // fill=llenar
+
+    pincel.fillStyle= "black";    // para dar color, propiedad o caracteristica
+    pincel.beginPath();  // pincel para iniciar camino
+    pincel.arc(400,200,50,0,2*3.14) // para graficar circunferencias
+    // 1posicion inicial(300,200) 2radio(50),angulos 0,2*3,14
+    pincel.fill(); // fill=llenar
+
+    pincel.fillStyle= "orange";    // para dar color, propiedad o caracteristica
+    pincel.beginPath();  // pincel para iniciar camino
+    pincel.arc(200,200,50,0,2*3.14) // para graficar circunferencias
+    // 1posicion inicial(300,200) 2radio(50),angulos 0,2*3,14
+    pincel.fill(); // fill=llenar*/
+
+
+</script>

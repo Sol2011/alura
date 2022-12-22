@@ -1,0 +1,38 @@
+<!-- canvas crea areas donde se pueda graficar, dibujos,graficos,imagenes
+ width=ancho
+height=altura
+ document.querySelector=conecta las etiquetas de html con acciones de java
+ con la variable pantalla conecta la etiqueta canvas 
+ var pincel se encarga de graficar y dibujar  --> 
+
+<canvas width="600" height="400"></canvas>
+
+<script>
+    var pantalla = document.querySelector("canvas");
+   // pantalla.getContext trae todo el contenido de la var pantalla en dos dimensiones
+   // get es traer 
+    var pincel = pantalla.getContext("2d");
+// pincel.fillRect()= pincel para llenar rectangulo fill=llenar rect=rectangulo
+    pincel.fillStyle= "lightgrey"; // para dar color
+    pincel.fillRect(0,0,600,400);
+
+    pincel.fillStyle= "green"; // para dar color
+    pincel.fillRect(0,0,200,400);
+
+    pincel.fillStyle= "red";    // para dar color, propiedad o caracteristica
+    pincel.fillRect(400,0,200,400);  // funcion
+
+    pincel.fillStyle= "yellow";    // para dar color, propiedad o caracteristica
+    pincel.beginPath();  // pincel para iniciar camino
+    pincel.moveTo(300,200); // mover a
+    pincel.lineTo(200,400);
+    pincel.lineTo(400,400);
+    pincel.fill(); // fill=llenar
+
+    pincel.fillStyle= "blue";    // para dar color, propiedad o caracteristica
+    pincel.beginPath();  // pincel para iniciar camino
+    pincel.arc(300,200,50,0,2*3.14) // para graficar circunferencias
+    // 1posicion inicial(300,200) 2radio(50),angulos 0,2*3,14
+    pincel.fill(); // fill=llenar
+
+</script>

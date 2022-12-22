@@ -1,0 +1,45 @@
+html{
+    font-size: 62.5%;
+}
+body{
+    margin: 10px;
+    background-color: #AAC4FF;
+}
+/*titulo*/
+.titulo{
+    width: 100%;
+    text-align: center;
+}
+.titulo img{
+    width: 100%;
+    height: 500px;
+    image-rendering: optimizeQuality;
+    
+}
+.titulo h1{
+    font-size: 4rem;
+}
+/*subtitulo*/
+.subtitulo{
+    text-align: center;
+}
+.subtitulo h2{
+    font-size: 3rem;
+}
+/*elementos*/
+
+.card-hamburger{
+    width: 400px;
+    height: 300px;
+    border:1px solid black;
+    border-radius: 10px;
+    text-align: center;
+    padding: 1rem;
+    margin: 0 auto;
+}
+.card-hamburger img{
+    width: 350px;
+    height: 200px;
+    margin: 0;
+    
+}
